@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form Submission</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Dynamic Form Submission</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <label for="color">Favorite Color:</label>
+          <select id="color" name="color" required>
+            <option value="">Select color...</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+      <div id="output" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
